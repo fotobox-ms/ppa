@@ -10,6 +10,18 @@ SHA1: d50803503ac4171b5e8730e472d7dbf112aaaf25
 SHA256: d2bc48f2d311ef286a2ba657cc34ea65a3d8a4be815285a76a80aa35ca54c8bf
 Description: Gui component of the fotobox firmware
 
+Package: firmware-gui
+Version: 2.0.0
+Architecture: arm64
+Maintainer: Fotobox Meyer Scheppach GbR <dev@fotoboxms.de>
+Depends: firmware-server (>= 1.0.0), flutter-pi
+Filename: ./firmware-gui_2.0.0_arm64.deb
+Size: 6611428
+MD5sum: 200fddbd5f463d7beb256c577e31ce29
+SHA1: 8be31527712ed779dd98eb7dfaea8c4ac852753c
+SHA256: 218e2e4132717b8e5dcfcbd5ce1d363818950ea4e8bb1797deba9117b12dfed0
+Description: Gui component of the fotobox firmware
+
 Package: firmware-server
 Version: 1.0.0
 Architecture: amd64
