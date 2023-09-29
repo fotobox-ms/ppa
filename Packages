@@ -16,10 +16,10 @@ Architecture: arm64
 Maintainer: Fotobox Meyer Scheppach GbR <dev@fotoboxms.de>
 Depends: firmware-server (>= 1.0.0), flutter-pi
 Filename: ./firmware-gui_2.0.1_arm64.deb
-Size: 6611964
-MD5sum: 4ce2ddbcb9e38612a6de1d68b9f6b0a1
-SHA1: e4dbd430cd32293cab7f31040fe695e22a910054
-SHA256: 4ab6791144ce7c3608b5cb3a813e7b766df3be4595abbf2f503510f3cace5795
+Size: 6610868
+MD5sum: ec94852b0530a8f4a94cb50f7f22b2b6
+SHA1: 19b76d4b1f722b28ed37dabd0703491232c456e2
+SHA256: f33de2297e357f61d4a31261760c6f7b532d606cc57c104f9e77220efff1efca
 Description: Gui component of the fotobox firmware
 
 Package: firmware-server
