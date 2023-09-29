@@ -49,14 +49,14 @@ Description: Server component of the fotobox firmware
 Package: flutter-pi
 Version: 1.0.0
 Architecture: arm64
-Maintainer: fotobox-ms
+Maintainer: Fotobox Meyer Scheppach GbR
 Installed-Size: 363
-Depends: libdrm2 libgbm1 ttf-mscorefonts-installer fontconfig libsystemd0 libinput10 libudev1 libxkbcommon0
+Depends: libdrm2, libgbm1, ttf-mscorefonts-installer, fontconfig, libsystemd0, libinput10, libudev1, libxkbcommon0
 Filename: ./flutter-pi_1.0.0_arm64.deb
-Size: 139904
-MD5sum: 34699bfd630bcf557abcd900f5c3e60f
-SHA1: c2083e00d2e8213031e86bd33687392f6447785c
-SHA256: 733416928a32525818c0afdaf23f724b390f4061be03b0b02761cd1f8252fd99
+Size: 139924
+MD5sum: 0b64f5dead6cad84752c3b2441a24382
+SHA1: ee68b3e9d077319047cb3d0ffaea7b72239b2d2e
+SHA256: e53c96ecf9ad8b3e9972e8658d6b958bb1052a1cfbbe5b5d4b84b61bda1f6aae
 Section: devel
 Priority: optional
 Description: flutter-pi built using CMake
