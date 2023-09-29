@@ -1,0 +1,31 @@
+name: CI
+on:
+  push:
+    branches: ["main", "ci-test"]
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-20.04
+    env:
+      EMAIL: info@fotoboxms.de
+    steps:
+      - uses: actions/checkout@v3
+      - name: Configure GPG Key
+        run: |
+          echo -n "$GPG_SIGNING_KEY" | base64 --decode | gpg --import
+        env:
+          GPG_SIGNING_KEY: ${{ secrets.GPG_SIGNING_KEY }}
+      - name: Regenerate Packages
+        run: |
+          dpkg-scanpackages --multiversion . > Packages
+          gzip -k -f Packages
+      - name: Regenerate Release, Release.gpg & InRelease
+        run: |
+          apt-ftparchive release . > Release
+          gpg --default-key "${EMAIL}" -abs -o - Release > Release.gpg
+          gpg --default-key "${EMAIL}" --clearsign -o - Release > InRelease
+      - uses: fregante/setup-git-user@v2
+      - run: |
+          git add .
+          git commit -m "(CI) regenerated indices"
+          git push
