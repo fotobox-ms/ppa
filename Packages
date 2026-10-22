@@ -166,6 +166,30 @@ SHA1: 969702d46df355f9dfb8a709d185e879d5b521c5
 SHA256: 4fcbb9cf8b954f1861367c9446bdd822f0b66ba5154d1dfaaa374c827bc4020e
 Description: Server component of the fotobox firmware
 
+Package: firmware-server
+Version: 1.2.1
+Architecture: arm64
+Maintainer: Fotobox Meyer Scheppach GbR <dev@fotoboxms.de>
+Depends: libgphoto2-6 (>= 2.5.25), libgphoto2-port12 (>= 2.5.25), gphoto2
+Filename: ./firmware-server_1.2.1_arm64.deb
+Size: 5674104
+MD5sum: 7735a1cc78cd13a7457105aaf71fbc58
+SHA1: 788a25471ac89397779617705bfea217735b10d3
+SHA256: 6e0dca5c39bca6c4df40b84cd33e2e929284f01a1aac90117347d75a791caae9
+Description: Server component of the fotobox firmware
+
+Package: firmware-server
+Version: 1.2.1
+Architecture: amd64
+Maintainer: Fotobox Meyer Scheppach GbR <dev@fotoboxms.de>
+Depends: libgphoto2-6 (>= 2.5.25), libgphoto2-port12 (>= 2.5.25), gphoto2
+Filename: ./firmware-server_1.2.1_amd64.deb
+Size: 6172038
+MD5sum: 3b952de4098f3f170f512193b5ddd3d4
+SHA1: aac7b445af34c990d97a2af77f6d373abe4b36fa
+SHA256: f2fe0f50c59d5a7940caade0b18a5c8d7e325475a314775b68c1e29e60b77636
+Description: Server component of the fotobox firmware
+
 Package: flutter-pi
 Version: 1.0.0
 Architecture: arm64
